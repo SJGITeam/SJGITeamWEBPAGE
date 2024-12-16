@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courseware Addon для Counter-Strike 2</title>
+
+    <!-- Подключение шрифта Bebas Neue -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Центрирование текста */
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif; /* Уникальный шрифт для главного заголовка */
+            font-size: 3.5rem;
+            color: #FF3B3B;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        h2, h3, .section-title {
+            font-weight: 700; /* Жирный шрифт */
+            font-size: 2rem; /* Размер шрифта */
+            color: #FF3B3B;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .important-text {
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #FF3B3B;
+        }
+
+        .big-text {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #FF3B3B;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background: #FF3B3B;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-download:hover {
+            background: #e02e2e;
+            transform: scale(1.05);
+        }
+
+        /* Контейнер для текста и секций */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center; /* Центрирование всех элементов внутри контейнера */
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        /* Сетка для карточек */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Убедитесь, что карточки равномерно заполняют пространство */
+            gap: 20px;
+            justify-items: center; /* Центрирование карточек в сетке */
+            margin-top: 30px; /* Отступ сверху */
+        }
+
+        .card {
+            background-color: #1f1f1f;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+            max-width: 400px; /* Ограничение максимальной ширины карточек */
+            text-align: left; /* Выравнивание текста внутри карточек */
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h4 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .card ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .card ul li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .instruction ol {
+            margin-left: 20px;
+        }
+
+        .footer {
+            background-color: #111;
+            color: #bbb;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .footer a {
+            color: #FF3B3B;
+            font-weight: bold;
+        }
+
+        /* Плавные анимации при прокрутке */
+        [data-aos="fade-up"] {
+            opacity: 0;
+            transition: opacity 1s ease-out;
+        }
+
+        [data-aos="fade-up"].aos-animate {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header data-aos="fade-up">
+            <h1>Courseware Addon для Counter-Strike 2</h1>
+            <p>Улучшите свои игровые навыки с "Courseware Addon" для CS2!</p>
+        </header>
+
+        <section data-aos="fade-up">
+            <h2 class="section-title">Описание аддона</h2>
+            <p><strong class="important-text">"Courseware Addon"</strong> — это уникальный инструмент для игроков Counter-Strike 2, разработанный для тренировок игровых навыков и улучшения командной работы. Аддон предоставляет расширенные настройки и новые функции, которые делают игровой процесс более гибким и увлекательным. Особое внимание уделено не только тренировкам, но и кастомизации игры, чтобы игроки могли наслаждаться как практикой, так и необычными фишками.</p>
+        </section>
+
+        <section class="content-grid">
+            <div class="card" data-aos="fade-up">
+                <h4 class="big-text">Ключевые функции!</h4>
+                <ul>
+                    <li>Командные тренировки с интуитивным интерфейсом!</li>
+                    <li>Индивидуальные тренировки для аиминга и реакции!</li>
+                    <li>Система вознаграждений с уникальными предметами!</li>
+                </ul>
+            </div>
+            <div class="card" data-aos="fade-up">
+                <h4 class="big-text">Расширенные настройки игры!</h4>
+                <ul>
+                    <li>Изменение графики на стиль CS:GO!</li>
+                    <li>Возможность пикселизировать графику игры!</li>
+                    <li>Ускорение раундов для быстрых тренировок!</li>
+                </ul>
+            </div>
+            <div class="card" data-aos="fade-up">
+                <h4 class="big-text">Еженедельные челленджи!</h4>
+                <ul>
+                    <li>Задания с уникальнейшими наградами!</li>
+                    <li>Рандомизированные раунды для развлечения!</li>
+                    <li>Еженедельные конкурсы на эксклюзивные скины в честь коллаборации Courseware Addon и Counter-Strike 2!!</li>
+                </ul>
+            </div>
+            <!-- Новая карточка -->
+            <div class="card" data-aos="fade-up">
+                <h4 class="big-text">Кооперативные тренировки!</h4>
+                <ul>
+                    <li>Тренируйтесь с друзьями в кооперативных миссиях, где важна командная работа и координация действий.</li>
+                    <li>Задачи варьируются от защиты важных объектов до совместного выполнения стратегических операций.</li>
+                    <li>Зарабатывайте очки за успешное выполнение миссий и получайте бонусы для улучшения игры.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="instruction" data-aos="fade-up">
+            <h2 class="section-title">Инструкция по установке</h2>
+            <p><strong>Шаг 1:</strong> Скачайте аддон с нашего сайта.</p>
+            <p><strong>Шаг 2:</strong> Распакуйте файл в папку с установленной игрой.</p>
+            <p><strong>Шаг 3:</strong> Запустите Counter-Strike 2 и активируйте аддон в меню модификаций.</p>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2 class="section-title">Скачайте аддон</h2>
+            <a href="ВАША_ССЫЛКА_ДЛЯ_СКАЧИВАНИЯ" class="btn-download">Скачать аддон</a>
+        </section>
+    </div>
+
+    <footer class="footer" data-aos="fade-up">
+        <p>&copy; 2024 Courseware Addon. Все права защищены.</p>
+        <p>Для получения дополнительной информации, посетите <a href="#">наш сайт</a>.</p>
+    </footer>
+
+    <!-- Плавная анимация с помощью AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,  // Длительность анимации
+            easing: 'ease',  // Эффект плавности
+            once: true,      // Анимация будет воспроизводиться только один раз
+        });
+    </script>
+</body>
+</html>
